@@ -4,14 +4,20 @@
   font-size: 15px;
 }
 
+body {
+  background-color: #F2F4F4;
+}
+
 a {
   text-decoration: none;
-  color: #fff;
+}
+
+.container {
+  padding: 0;
 }
 
 .navbar-wrapper {
   background-color: #5A8DEE;
-  color: #fff;
 }
 
 .navbar-wrapper .nav-bar .bookmarks {
@@ -48,15 +54,12 @@ a {
 
 .navbar-wrapper .nav-bar .options .language {
   padding: 20px 10px;
+  color: #fff;
+  font-weight: 500;
 }
 
 .navbar-wrapper .nav-bar .options .language .flag {
   width: 25px;
-}
-
-.navbar-wrapper .nav-bar .options .language span {
-  text-transform: uppercase;
-  color: #fff;
 }
 
 .navbar-wrapper .nav-bar .options .notification-icon {
@@ -120,5 +123,48 @@ a {
   font-size: 130%;
   color: #fff;
   padding: 15px 10px;
+}
+
+.navbar-nav .dropdown-menu-nav {
+  margin: 10px 5px;
+}
+
+.navbar-nav .dropdown-menu-nav .link-menu {
+  color: #727E8C;
+  padding: 10px 10px;
+}
+
+.navbar-nav .dropdown-menu-nav .link-menu i {
+  color: #727E8C;
+  padding: 0;
+}
+
+.navbar-nav .active {
+  border-radius: 3%;
+  background-color: rgba(231, 231, 231, 0.705);
+}
+
+.navbar-wrapper-menu {
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.card {
+  border: 0 solid #DFE3E7;
+  margin: 10px;
+  -webkit-box-shadow: -8px 12px 18px 0 rgba(25, 42, 70, 0.13);
+          box-shadow: -8px 12px 18px 0 rgba(25, 42, 70, 0.13);
+  border-radius: 2%;
+}
+
+.card .card-header {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card .card-header i {
+  margin-left: auto;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
