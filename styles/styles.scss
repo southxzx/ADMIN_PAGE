@@ -5,6 +5,11 @@
     font-size: 15px;
 }
 
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
 // --------------------------- NAVBAR --------------------------
 
 .navbar-wrapper{
@@ -14,16 +19,6 @@
         .bookmarks{
             display: flex;
             flex-direction: row;
-            .navbar-nav{
-                flex-direction: row;
-                .nav-item{
-                    .nav-link i{
-                        font-size: 130%;
-                        color: #fff;
-                        padding: 10px 10px;
-                    }
-                }
-            }
         }
         .logo{
             display: flex;
@@ -33,14 +28,65 @@
             }
         }
         .options{
+            text-align: right;
+            display: flex;
+            flex-direction: row;
             .language{
+                padding: 20px 10px;
                 .flag{
                     width: 25px;
                 }
                 span{
                     text-transform: uppercase;
+                    color: #fff;
                 }
             }
+            .notification-icon{
+                position: relative;
+                .badge{
+                    color: #fff;
+                    position: absolute;
+                    left: 20px;
+                    top: 11px;
+                    border-radius:50%;
+                }
+            }
+            .user{
+                display: flex;
+                flex-direction: row;
+                padding: 13px 0;
+                .user-descriptions{
+                    padding: 0px 5px 0 15px;
+                    span{
+                        display: block;
+                        line-height: 1.2;
+                        color: #fff;
+                        text-align: right;
+                        &.user-name{
+                            font-size: 110%                       
+                        }
+                        &.user-status{
+                            font-size: 90%;
+                        }
+                    }
+                }
+                .user-image{
+                    width: 40px;
+                    height: 100%;
+                    border-radius: 50%;
+                    box-shadow: border;
+                }
+            }
+        }
+    }
+}
+.navbar-nav{
+    flex-direction: row;
+    .nav-item{
+        .nav-link i{
+            font-size: 130%;
+            color: #fff;
+            padding: 15px 10px;
         }
     }
 }

@@ -4,6 +4,11 @@
   font-size: 15px;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .navbar-wrapper {
   background-color: #5A8DEE;
   color: #fff;
@@ -19,19 +24,6 @@
           flex-direction: row;
 }
 
-.navbar-wrapper .nav-bar .bookmarks .navbar-nav {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.navbar-wrapper .nav-bar .bookmarks .navbar-nav .nav-item .nav-link i {
-  font-size: 130%;
-  color: #fff;
-  padding: 10px 10px;
-}
-
 .navbar-wrapper .nav-bar .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,11 +35,90 @@
   margin: 0 auto;
 }
 
+.navbar-wrapper .nav-bar .options {
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navbar-wrapper .nav-bar .options .language {
+  padding: 20px 10px;
+}
+
 .navbar-wrapper .nav-bar .options .language .flag {
   width: 25px;
 }
 
 .navbar-wrapper .nav-bar .options .language span {
   text-transform: uppercase;
+  color: #fff;
+}
+
+.navbar-wrapper .nav-bar .options .notification-icon {
+  position: relative;
+}
+
+.navbar-wrapper .nav-bar .options .notification-icon .badge {
+  color: #fff;
+  position: absolute;
+  left: 20px;
+  top: 11px;
+  border-radius: 50%;
+}
+
+.navbar-wrapper .nav-bar .options .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 13px 0;
+}
+
+.navbar-wrapper .nav-bar .options .user .user-descriptions {
+  padding: 0px 5px 0 15px;
+}
+
+.navbar-wrapper .nav-bar .options .user .user-descriptions span {
+  display: block;
+  line-height: 1.2;
+  color: #fff;
+  text-align: right;
+}
+
+.navbar-wrapper .nav-bar .options .user .user-descriptions span.user-name {
+  font-size: 110%;
+}
+
+.navbar-wrapper .nav-bar .options .user .user-descriptions span.user-status {
+  font-size: 90%;
+}
+
+.navbar-wrapper .nav-bar .options .user .user-image {
+  width: 40px;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-box-shadow: border;
+          box-shadow: border;
+}
+
+.navbar-nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navbar-nav .nav-item .nav-link i {
+  font-size: 130%;
+  color: #fff;
+  padding: 15px 10px;
 }
 /*# sourceMappingURL=styles.css.map */
