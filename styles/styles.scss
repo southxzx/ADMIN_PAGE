@@ -1,0 +1,46 @@
+@import "variables";
+
+*{
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+// --------------------------- NAVBAR --------------------------
+
+.navbar-wrapper{
+    background-color: $nav-bar-color;
+    color: #fff;
+    .nav-bar{
+        .bookmarks{
+            display: flex;
+            flex-direction: row;
+            .navbar-nav{
+                flex-direction: row;
+                .nav-item{
+                    .nav-link i{
+                        font-size: 130%;
+                        color: #fff;
+                        padding: 10px 10px;
+                    }
+                }
+            }
+        }
+        .logo{
+            display: flex;
+            img{
+                width: 60px;
+                margin: 0 auto;
+            }
+        }
+        .options{
+            .language{
+                .flag{
+                    width: 25px;
+                }
+                span{
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
